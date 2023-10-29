@@ -20,7 +20,7 @@ Cada exercício é acompanhado por informações sobre quais músculos são afet
 ## Instruções de Execução Correta
 Fornece instruções passo a passo sobre como realizar cada exercício de forma segura e eficaz.
 # Tecnologias Utilizadas
-<br>[![SkillIcons](https://skillicons.dev/icons?i=java,scala,postgresql,spring,docker,aws)](https://skillicons.dev)<br/>
+<br>[![SkillIcons](https://skillicons.dev/icons?i=java,scala,postgresql,spring,docker,heroku)](https://skillicons.dev)<br/>
 
 # Resultados e Impacto
 Este projeto resultou em uma plataforma de gerenciamento de academia completa que facilita a administração eficiente de academias e aprimora a experiência dos alunos. Os alunos podem acompanhar seu progresso de treinamento, acessar informações sobre exercícios e receber orientações sobre a execução correta dos exercícios. A plataforma também oferece às academias um sistema de pagamento seguro e controle de presença simplificado.
