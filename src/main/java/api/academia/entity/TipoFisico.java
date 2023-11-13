@@ -6,6 +6,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,17 @@ import lombok.Setter;
 public class TipoFisico {
 	@Id
 	@GeneratedValue
-	@Column(name="cd_aluno")
+	@Column(name="cd_tipo_fisico")
 	private UUID id;
+	
+	@OneToOne
+	@Column(name="fk_aluno")
+	private Aluno aluno;
+	
+	@OneToOne
+	@Column(name="fk_pretencao")
+	private Pretencao pretencao;
+	
+	@Column(name="vl_ativo")
+	private boolean ativo;
 }

@@ -2,6 +2,7 @@ package api.academia.entity;
 
 import java.util.UUID;
 
+import api.academia.entity.enumeradores.TipoContato;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -37,4 +38,7 @@ public class Contato {
 	@Column(name="tb_aluno_cd_aluno", nullable=false)
 	@ManyToOne
 	private Aluno aluno;
+	
+	@Column(name="vl_ativo")
+	private boolean ativo;
 }

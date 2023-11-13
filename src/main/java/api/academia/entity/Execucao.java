@@ -6,6 +6,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,16 @@ import lombok.Setter;
 public class Execucao {
 	@Id
 	@GeneratedValue
-	@Column(name="cd_aluno")
+	@Column(name="cd_execucao")
 	private UUID id;
+	
+	@Column(name="nm_link_execucao")
+	private String linkExecucao;
+	
+	@OneToOne
+	@Column(name="fk_exercicio")
+	private Exercicio exercicio;
+	
+	@Column(name="vl_ativo")
+	private boolean ativo;
 }
